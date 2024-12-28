@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "5e7e1ec5-a16d-4e09-8395-f1af53acb944",
+		"name": "MessageSender Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12784321"
+	},
+	"item": [
+		{
+			"name": "recuperaMessaggi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/message/messaggi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"message",
+						"messaggi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recuperaMessaggio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/message/messaggio/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"message",
+						"messaggio",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salvaMessaggio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": null,\r\n    \"body\": \"Testo del secondo messaggio dell'utente 3\",\r\n    \"phone\": \"4102365874\",\r\n    \"title\": \"Secondo messaggio dell'utente 3\",\r\n    \"idUtente\": 3 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/message/salva-messaggio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"message",
+						"salva-messaggio"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
